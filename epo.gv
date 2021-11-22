@@ -1,0 +1,29 @@
+digraph G {
+	label="Data Centre Environment EPO";
+	
+	node [shape=rectangle];
+	
+	m [label="Mains input"];
+	
+	subgraph cluster_dc {
+	label="Data centre environment";
+	s [label="servers"];
+	u [label="UPS"];
+	e [label="EPO controller"];
+	b [label="EPO button"];
+	f [label="Fire panel"];
+	c1 [label="Contactor"];
+	c2 [label="Contactor"];
+	}
+	
+	b -> e;
+	f -> e;
+	e -> c1;
+	e -> c2;
+	e -> u;
+	m -> c1;
+	c1 -> u;
+	u -> c2;
+	c2 -> s;
+	
+}

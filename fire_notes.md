@@ -147,20 +147,6 @@ Oxygen is present at approximately in the air under normal conditions:
     oxygen content is a key part of gaseous fire suppression systems,
     which function differently.
 
-Mitigation strategies
----------------------
-
-Sometimes, fire will damage or destroy the data centre, or the building
-in which it is situated.
-
--   Just as we have redundancy levels in power and cooling, consider
-    having a secondary data centre location. This will involve
-    duplication of hardware, mirroring of data and configuration, and
-    may involve complex network routing.
-
--   Virtualisation can make it easier to migrate many workloads from one
-    location to another.
-
 Detection methods
 -----------------
 
@@ -240,3 +226,18 @@ Extinguishants
 
 Extinguishants are broadly divided into gaseous, removing oxygen and
 water, removing heat.
+
+Mitigation strategies
+---------------------
+
+Sometimes, fire will damage or destroy the data centre, or the building
+in which it is situated.
+
+-   Just as we have redundancy levels in power and cooling, consider
+    having a secondary data centre location. This will involve
+    duplication of hardware, mirroring of data and configuration, and
+    may involve complex network routing.
+
+-   Virtualisation can make it easier to migrate many workloads from one
+    location to another.
+	

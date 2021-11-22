@@ -1,0 +1,49 @@
+digraph G {
+	label="Data Centre Environment Fire Detection";
+	node[shape=rectangle];
+	
+	subgraph cluster_building {
+	label="building (containing data centre environment)";
+	subgraph cluster_dc {
+		label="inside data centre environment";
+		areasmoke [label="area smoke detectors"];
+		areaheat [label="area heat detectors"];
+		vesda [label="vesda system"];
+		panel [label="fire panel"];
+		audible [label="audible"];
+		visual [label="visual"];
+		epo [label="Emergency power off"];
+		suppression [label="Fire suppression"];
+		areasmoke -> panel;
+		areaheat -> panel;
+		vesda -> panel;
+		panel -> audible;
+		panel -> visual;
+		panel -> epo;
+		panel ->suppression;
+		
+	}
+	
+	alerts [label="remote alerts"];
+	panel -> alerts;
+	
+	subgraph cluster_it_office {
+		label="IT office";
+		a1 [label="annunciator"];
+	}
+	
+	subgraph cluster_sec_office {
+		label="security office";
+		bfp [label="building fire panel"];
+		a2 [label="annunciator"];
+	}
+	panel -> bfp;
+		
+		
+	
+	}
+
+	panel -> a1;
+	panel -> a2;
+	
+}
